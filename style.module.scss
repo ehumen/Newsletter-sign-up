@@ -1,0 +1,140 @@
+
+.formBlock {
+  margin: 2em 2em;
+}
+
+.mainBlock {
+  background-color: white;
+}
+
+
+.list {
+  list-style-image: url("./public/icon-list.svg");
+  padding-inline-start: 2em;
+  margin-inline-start: -5px;
+
+  li {
+    padding-inline-start: 1em;
+
+    &::marker {
+      padding-top: 0.5em;
+    }
+  }
+}
+
+.label {
+  font-size: 0.7em;
+  font-weight: 700;
+  vertical-align: top;
+
+}
+
+.error {
+  font-size: 0.7em;
+  font-weight: 700;
+  color: hsl(4, 100%, 67%);
+  float: right;
+}
+
+.success {
+  background-color: white;
+  margin: 2em 2em;
+  padding-top: 10vh;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.form {
+  width: 100%;
+  height: 3em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  outline: none;
+
+  &__email {
+    border: 2px solid hsl(231, 7%, 60%);
+
+    :focus-visible {
+      //border: 2px solid hsl(235, 18%, 26%);
+    }
+  }
+
+  &__btn {
+    font-family: 'Roboto', sans-serif;
+    background: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(to right, hsl(4, 100%, 50%), hsl(30, 100%, 50%));
+      box-shadow: 0 10px 20px hsl(4, 100%, 80%);
+    }
+
+
+  }
+}
+
+.input__error {
+  background-color: hsl(4, 100%, 95%);
+  border: 2px solid hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+}
+
+@media screen and (max-width: 376px) {
+  .form__email:focus-visible {
+    outline: none;
+    border: 2px solid hsl(235, 18%, 26%);
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .mainBlock {
+    width: 600px;
+    height: 400px;
+    margin: 20vh auto;
+    box-sizing: border-box;
+    border-radius: 1.5em;
+  }
+
+  .formBlock {
+    font-size: 0.8em;
+    width: 48%;
+    padding: 3em 0;
+    //margin: 1em;
+  }
+
+  .picture {
+    margin: 1em;
+    float: right;
+    height: 90%;
+    box-sizing: content-box;
+
+    img {
+      box-sizing: border-box;
+      height: 100%;
+    }
+  }
+  .success{
+    width: 300px;
+    height: 300px;
+    margin: 20vh auto;
+    border-radius: 1.5em;
+    padding: 2em;
+    div{
+      p{
+        font-size: 0.7em;
+      }
+    }
+  }
+
+
+}
+

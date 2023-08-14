@@ -1,0 +1,24 @@
+{
+  "name": "newsletter-sign-up-with-success-message-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@next/font": "^13.4.13",
+    "next": "^13.4.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.64.1"
+  }
+}
