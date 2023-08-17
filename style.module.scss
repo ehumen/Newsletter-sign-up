@@ -71,6 +71,9 @@
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     border: none;
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
 
     &:hover {
       cursor: pointer;
@@ -109,6 +112,11 @@
     width: 48%;
     padding: 3em 0;
     //margin: 1em;
+  }
+
+  .form__btn {
+    position: static;
+    width: 100%;
   }
 
   .picture {
