@@ -5,6 +5,7 @@
 
 .mainBlock {
   background-color: white;
+  height: 100vh;
 }
 
 
@@ -71,9 +72,9 @@
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     border: none;
-    position: absolute;
-    bottom: 10px;
-    width: 80%;
+    //position: absolute;
+    //bottom: 10px;
+    //width: 80%;
 
     &:hover {
       cursor: pointer;
