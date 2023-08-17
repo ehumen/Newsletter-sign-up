@@ -24,6 +24,7 @@ export default function SubmitForm({onEnteringEmail, onSubscribed, state}) {
                    type='email'
                    id='email'
                    name='email'
+                   required
                    pattern='[a-zA-Z0-9_\.-]*@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}'
                    placeholder='email@company.com'
                    onInvalid={() => setError(true)}
