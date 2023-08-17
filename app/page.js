@@ -45,7 +45,7 @@ export default function Page() {
             <div className={styles.mainBlock}>
 
                     <picture className={styles.picture}>
-                        <source srcSet='/illustration-sign-up-mobile.svg' media="(max-width: 375px)"/>
+                        <source srcSet='/illustration-sign-up-mobile.svg' media="(max-width: 600px)"/>
                         <img src="/illustration-sign-up-desktop.svg" alt="picture"/>
                     </picture>
 
