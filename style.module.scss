@@ -88,14 +88,14 @@
   color: hsl(4, 100%, 67%);
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 600px) {
   .form__email:focus-visible {
     outline: none;
     border: 2px solid hsl(235, 18%, 26%);
   }
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 601px) {
   .mainBlock {
     width: 600px;
     height: 400px;
