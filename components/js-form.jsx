@@ -5,9 +5,13 @@ import {useState} from "react";
 import Button from "./button";
 
 export default function SubmitForm({onEnteringEmail, onSubscribed, state}) {
+    const pattern='[a-zA-Z0-9_\\.-]*@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}';
     const [error, setError] = useState(false);
     const handleSubmit = (event) => {
         event.preventDefault();
+        if(!state.email.match(pattern)){
+            return setError(true)
+        }
         state.email ? onSubscribed(): setError(true);
     }
     if (error) {
